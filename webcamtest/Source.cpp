@@ -11,7 +11,7 @@ int main(int, char**)
 	Mat image;
 	namedWindow("image", 1);
 
-	while (1) {
+	while (1) { //this fixes a horizontally flipped webcam feed
 
 		cap >> image;
 		flip(image, image, 1);
